@@ -1,0 +1,30 @@
+/**
+ * Define in this file configuration variables for the webapp.
+ *
+ * The secret word consists in a decoded jwt. Send the encoded token, into the
+ * requests header: 'x-access-token': 'encoded_jwt'.
+ *
+ * DB_URI is the the string to connect to the local mongodb database. It is not used in case of Heroku deployment
+ * as in that case environment variable is used.
+ *
+ * Access and create account in: https://console.creatordev.io/index.html#/access-keys
+ * to generate API access keys: LOGIN_ACCESS_KEY and LOGIN_ACCESS_KEY. Change the
+ * generated keys in this file.
+ *
+ * CLIENT_NAME is the name of your sesame client connected to Device Server
+ *
+ * HOST is utl to your webapp instance, change it accordingly depending on your setup.
+ *
+ */
+module.exports = {
+    'secret': 'secret',
+    'LOGIN_ACCESS_KEY': '<acess_key>',
+    'LOGIN_ACCESS_SECRET': ''<access_secret>',
+    'HOST' : '<host_url>',
+    modules: {
+        ifttt: {
+            enabled: false,
+            ifttt_key: '<iftt_key>'
+        }
+    }
+};

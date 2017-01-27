@@ -1,0 +1,6 @@
+/node_modules
+/doc
+.idea
+.vscode
+config.js
+/test
