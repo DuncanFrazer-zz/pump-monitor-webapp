@@ -1,7 +1,7 @@
 {
-  "name": "ci40-kiwano-webapp",
+  "name": "pump-monitor-webapp",
   "version": "1.0.0",
-  "description": "Kiwano is a middle tier web application.",
+  "description": "Pump monitor recieves webhooks from creator device server and fires ifttt maker api calls when a new activity is detected.",
   "scripts": {
     "start": "node ./bin/www"
   },
@@ -13,8 +13,6 @@
     "iot",
     "internet of things",
     "iot-framework",
-    "heroku",
-    "mlab",
     "lwm2m",
     "creator",
     "rest",
@@ -25,24 +23,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/CreatorDev/ci40-kiwano-webapp"
+    "url": "https://github.com/DuncanFrazer/pump-monitor-webapp"
   },
   "bugs": {
-    "url": "https://github.com/CreatorDev/ci40-kiwano-webapp/issues"
+    "url": "https://github.com/DuncanFrazer/pump-monitor-webapp/issues"
   },
-  "homepage": "https://github.com/CreatorDev/ci40-kiwano-webapp",
-  "author": "Imagination Technologies",
+  "homepage": "https://github.com/DuncanFrazer/pump-monitor-webapp",
+  "author": "Duncan Frazer",
   "license": "BSD-3-Clause",
   "dependencies": {
     "body-parser": "~1.8.1",
     "cookie-parser": "~1.3.3",
-    "creator-js-client": "https://github.com/CreatorDev/creator-js-client.git",
+    "creator-js-client": "2.0.0",
     "debug": "~2.0.0",
     "express": "~4.9.0",
     "jade": "~1.6.0",
     "jsonwebtoken": "^7.1.3",
     "md5": "^2.2.1",
-    "mongoose": "^4.5.2",
+
     "morgan": "~1.3.0",
     "serve-favicon": "~2.1.3"
   },
